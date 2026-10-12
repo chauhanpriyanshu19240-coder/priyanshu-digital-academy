@@ -4,78 +4,228 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Priyanshu Salon | Hair & Style</title>
+  <title>Azeem AM Hair Stylist Salon | Noida</title>
+  <meta name="description" content="Visit Azeem AM Hair Stylist Salon in Barola, Sector 49, Noida. Haircut, beard styling, hair colour, facial and grooming offers.">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: Arial, sans-serif; background: #111; color: #fff; line-height: 1.6; }
-    header { padding: 18px 7%; display: flex; justify-content: space-between; align-items: center; background: #080808; }
-    header h2 { color: #d6ad60; }
-    nav a { color: white; text-decoration: none; margin-left: 18px; }
-    .hero { min-height: 480px; padding: 80px 7%; display: flex; align-items: center; background: linear-gradient(90deg, #080808 20%, #0008), url('salon1.jpg') center/cover; }
-    .hero div { max-width: 600px; }
-    .hero h1 { font-size: clamp(36px, 6vw, 64px); line-height: 1.1; margin: 15px 0; }
-    .gold { color: #d6ad60; }
-    .btn { display: inline-block; background: #d6ad60; color: #111; padding: 12px 22px; margin-top: 22px; border-radius: 5px; text-decoration: none; font-weight: bold; }
-    section { padding: 55px 7%; text-align: center; }
-    section h2 { font-size: 32px; margin-bottom: 12px; }
-    .services, .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 20px; margin-top: 28px; }
-    .service { background: #202020; padding: 25px; border-radius: 8px; border: 1px solid #393939; }
-    .service h3 { color: #d6ad60; margin-bottom: 8px; }
-    .gallery img { width: 100%; height: 250px; object-fit: cover; border-radius: 8px; }
-    #contact { background: #1c1c1c; }
-    footer { text-align: center; padding: 20px; background: #080808; color: #bbb; }
-    @media (max-width: 600px) { header { flex-direction: column; gap: 10px; } nav a { margin: 0 7px; } .hero { padding: 65px 7%; } }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #101010;
+      color: #f8f4eb;
+      line-height: 1.6;
+    }
+    header {
+      background: #080808;
+      padding: 18px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #b99552;
+    }
+    .logo { color: #d9b56d; font-size: 22px; font-weight: bold; }
+    nav a { color: white; text-decoration: none; margin: 0 8px; }
+    .hero {
+      text-align: center;
+      padding: 75px 20px;
+      background: linear-gradient(135deg, #17130d, #292016, #101010);
+    }
+    .hero h1 { color: #e2bd75; font-size: clamp(32px, 7vw, 55px); }
+    .hero p { margin: 12px auto 24px; max-width: 600px; }
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      margin: 5px;
+      border-radius: 6px;
+      background: #d5ae64;
+      color: #17120a;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .button.whatsapp { background: #25d366; color: #071b0d; }
+    section { padding: 48px 5%; }
+    h2 {
+      text-align: center;
+      color: #e2bd75;
+      font-size: 30px;
+      margin-bottom: 24px;
+    }
+    .offers {
+      border: 1px solid #c7a15e;
+      border-radius: 12px;
+      padding: 22px;
+      max-width: 850px;
+      margin: auto;
+      background: #191713;
+    }
+    .offer-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 13px 4px;
+      border-bottom: 1px solid #393226;
+    }
+    .offer-row:last-child { border-bottom: 0; }
+    .old { color: #bcb4a5; text-decoration: line-through; }
+    .new { color: #e8c477; font-size: 20px; font-weight: bold; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .card {
+      background: #1c1b19;
+      border: 1px solid #393226;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      border-radius: 7px;
+      background: #292929;
+    }
+    .card h3 { color: #e2bd75; margin: 12px 0 5px; }
+    .gallery img { height: 240px; }
+    .details {
+      max-width: 750px;
+      margin: auto;
+      padding: 24px;
+      background: #1c1b19;
+      border-radius: 10px;
+      border: 1px solid #393226;
+    }
+    .details p { margin: 10px 0; }
+    .details a { color: #e2bd75; }
+    footer {
+      text-align: center;
+      padding: 25px 15px;
+      background: #080808;
+      border-top: 1px solid #b99552;
+    }
+    @media (max-width: 500px) {
+      nav { width: 100%; }
+      nav a { margin: 0 7px 0 0; font-size: 14px; }
+      .offer-row { align-items: flex-start; }
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h2>PRIYANSHU <span class="gold">SALON</span></h2>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <div class="hero" id="home">
-    <div>
-      <p class="gold">STYLE • CONFIDENCE • YOU</p>
-      <h1>Your Look.<br><span class="gold">Your Style.</span></h1>
-      <p>Professional haircuts and grooming to bring out your best look.</p>
-      <a class="btn" href="https://wa.me/918057444427">Book on WhatsApp</a>
+<header>
+  <div class="logo">✂ AM SALON</div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#offers">Offers</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <p>BAROLA • SECTOR 49 • NOIDA</p>
+  <h1>Azeem AM Hair Stylist Salon</h1>
+  <p>Your Style. Your Look. Our Passion.</p>
+  <p>Haircut, beard styling, hair colour and grooming services.</p>
+  <a class="button whatsapp" href="https://wa.me/919690226056?text=Hello%20Azeem%20AM%20Salon%2C%20I%20want%20to%20enquire%20about%20a%20service." target="_blank" rel="noopener">WhatsApp for Booking</a>
+  <a class="button" href="#offers">View Special Offers</a>
+</section>
+
+<section id="offers">
+  <h2>Special Offers</h2>
+  <div class="offers">
+    <div class="offer-row">
+      <span>D-Tan</span>
+      <span><span class="old">₹299</span> &nbsp;<span class="new">₹199</span></span>
+    </div>
+    <div class="offer-row">
+      <span>Hair Colour</span>
+      <span><span class="old">₹199</span> &nbsp;<span class="new">₹149</span></span>
+    </div>
+    <div class="offer-row">
+      <span>Facial</span>
+      <span><span class="old">₹999</span> &nbsp;<span class="new">₹799</span></span>
+    </div>
+    <div class="offer-row">
+      <span>Hair Spa &amp; Treatment</span>
+      <span><span class="old">₹399</span> &nbsp;<span class="new">₹299</span></span>
+    </div>
+    <p style="text-align:center;margin-top:18px;color:#d7c6a4;">Ask us on WhatsApp about these offers.</p>
+  </div>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Haircut</h3>
+      <p>Clean and stylish haircut</p>
+      <p class="new">₹70</p>
+    </div>
+    <div class="card">
+      <h3>Beard Styling</h3>
+      <p>Shape your look with beard styling</p>
+      <p class="new">₹60</p>
+    </div>
+    <div class="card">
+      <h3>Hair Colour</h3>
+      <p>Refresh your look with hair colour</p>
+      <p class="new">₹199</p>
+    </div>
+    <div class="card">
+      <h3>Facial</h3>
+      <p>Facial services to suit your needs</p>
+      <p class="new">Starting ₹999</p>
+    </div>
+    <div class="card">
+      <h3>Hair Spa &amp; Treatment</h3>
+      <p>Hair care and treatment</p>
+      <p class="new">₹399</p>
+    </div>
+    <div class="card">
+      <h3>D-Tan</h3>
+      <p>D-Tan grooming service</p>
+      <p class="new">₹299</p>
     </div>
   </div>
+</section>
 
-  <section id="services">
-    <h2>Our <span class="gold">Services</span></h2>
-    <p>Look sharp. Feel confident.</p>
-    <div class="services">
-      <div class="service"><h3>Haircut</h3><p>Fresh cuts tailored to your style.</p></div>
-      <div class="service"><h3>Beard Styling</h3><p>Clean trims and sharp beard looks.</p></div>
-      <div class="service"><h3>Hair Styling</h3><p>Get ready for your special occasion.</p></div>
-      <div class="service"><h3>Grooming</h3><p>Personal care with attention to detail.</p></div>
+<section id="gallery">
+  <h2>Salon Gallery</h2>
+  <div class="cards gallery">
+    <div class="card"><img src="salon1.jpg" alt="Salon photo 1" loading="lazy"></div>
+    <div class="card"><img src="salon2.jpg" alt="Salon photo 2" loading="lazy"></div>
+    <div class="card"><img src="salon3.jpg" alt="Salon photo 3" loading="lazy"></div>
+    <div class="card"><img src="salon4.jpg" alt="Salon photo 4" loading="lazy"></div>
+    <div class="card"><img src="salon5.jpg" alt="Salon photo 5" loading="lazy"></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Visit Our Salon</h2>
+  <div class="details">
+    <p><strong>Salon:</strong> Azeem AM Hair Stylist Salon</p>
+    <p><strong>Address:</strong> Barola, Sector 49, Noida, near Shri Ram Hospital</p>
+    <p><strong>Opening Hours:</strong> 9:00 AM – 10:00 PM</p>
+    <p><strong>Phone:</strong> <a href="tel:9690226056">9690226056</a></p>
+    <p><strong>Location:</strong> <a href="https://maps.google.com/maps?q=28.558515548706055%2C77.37188720703125&z=17&hl=en" target="_blank" rel="noopener">Open in Google Maps</a></p>
+    <div style="text-align:center;margin-top:18px;">
+      <a class="button whatsapp" href="https://wa.me/919690226056?text=Hello%2C%20I%20want%20to%20book%20a%20salon%20service." target="_blank" rel="noopener">Contact on WhatsApp</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="gallery">
-    <h2>Our <span class="gold">Gallery</span></h2>
-    <p>Take a look at our style collection.</p>
-    <div class="gallery">
-      <img src="salon1.jpg" alt="Salon style 1">
-      <img src="salon2.jpg" alt="Salon style 2">
-      <img src="salon3.jpg" alt="Salon style 3">
-      <img src="salon4.jpg" alt="Salon style 4">
-      <img src="salon5.jpg" alt="Salon style 5">
-    </div>
-  </section>
+<footer>
+  <p>© Azeem AM Hair Stylist Salon</p>
+  <p>Barola, Sector 49, Noida</p>
+</footer>
 
-  <section id="contact">
-    <h2>Ready for a <span class="gold">New Look?</span></h2>
-    <p>Contact us on WhatsApp to enquire or book your appointment.</p>
-    <a class="btn" href="https://wa.me/918057444427">Chat on WhatsApp</a>
-  </section>
-
-  <footer>© 2026 Priyanshu Salon. All rights reserved.</footer>
 </body>
 </html>
